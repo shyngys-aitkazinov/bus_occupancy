@@ -1,0 +1,44 @@
+[project]
+name = "bus-occupancy"
+version = "0.1.0"
+description = "Project for bus occupancy detection using computer vision"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "argparse>=1.4.0",
+    "matplotlib>=3.10.1",
+    "numpy>=2.2.4",
+    "opencv-python>=4.11.0.86",
+    "pandas>=2.2.3",
+    "pillow>=11.1.0",
+    "pip>=25.0.1",
+    "supervision>=0.25.1",
+    "ultralytics>=8.3.132",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff", "mypy", "ipykernel>=6.29.5"]
+
+[build-system]
+requires = ["setuptools>=64.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "UP", "I"]
+ignore = ["F401", "UP015", "F541"]
+
+[tool.ruff.format]
+quote-style = "double" # Optional: enforce double quotes
+indent-style = "space" # Optional: use spaces instead of tabs
+
+[tool.mypy]
+no_implicit_optional = true
+check_untyped_defs = true
+ignore_missing_imports = true
