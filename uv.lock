@@ -60,6 +60,7 @@ dependencies = [
     { name = "pillow" },
     { name = "pip" },
     { name = "supervision" },
+    { name = "tqdm" },
     { name = "ultralytics" },
 ]
 
@@ -85,6 +86,7 @@ requires-dist = [
     { name = "pytest", marker = "extra == 'dev'" },
     { name = "ruff", marker = "extra == 'dev'" },
     { name = "supervision", specifier = ">=0.25.1" },
+    { name = "tqdm", specifier = ">=4.67.1" },
     { name = "ultralytics", specifier = ">=8.3.132" },
 ]
 provides-extras = ["dev"]

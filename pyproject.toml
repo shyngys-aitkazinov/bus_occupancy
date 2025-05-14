@@ -13,6 +13,7 @@ dependencies = [
     "pillow>=11.1.0",
     "pip>=25.0.1",
     "supervision>=0.25.1",
+    "tqdm>=4.67.1",
     "ultralytics>=8.3.132",
 ]
 
